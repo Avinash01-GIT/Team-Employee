@@ -1,0 +1,92 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #008744; /* green */
+  }
+  20% {
+    color: #0057e7; /* blue */
+  }
+  40% {
+    color: #d62d20; /* red */
+  }
+  60% {
+    color: #ffa700; /* yellow */
+  }
+  80% {
+    color: #ffffff; /* white */
+  }
+  100% {
+    color: #008744; /* green */
+  }
+}
+
+h1 {
+  text-align: center;
+  animation: colorChange 15s infinite;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 45%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.employee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+.button {
+  background-color: #008744;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0057e7;
+}
+
+.button.remove {
+  background-color: #d62d20;
+}
+
+.button.remove:hover {
+  background-color: #ffa700;
+}
+
+.average-age {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #008744;
+}
